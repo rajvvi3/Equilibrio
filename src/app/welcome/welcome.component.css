@@ -1,0 +1,83 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.text-center h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-center p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Styling the <app-auth> component placeholder */
+app-auth {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-center h1 {
+    font-size: 24px;
+  }
+
+  .text-center p {
+    font-size: 14px;
+  }
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.text-center h1 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-center p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+h3 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.col-md-4 p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Styling for the authentication component placeholder */
+app-auth {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .text-center h1 {
+    font-size: 24px;
+  }
+
+  .text-center p {
+    font-size: 14px;
+  }
+}

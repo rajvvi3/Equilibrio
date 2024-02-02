@@ -1,0 +1,33 @@
+<div class="auth-container mt-5">
+  <div class="card form-container text-center">
+    <div class="card-body">
+      <h2 class="card-title">{{ showSignIn ? 'Login' : 'Register' }}</h2>
+      <form (ngSubmit)="onSubmit()" class="mt-4">
+        
+        <!-- Registration Fields -->
+        <div *ngIf="!showSignIn" class="mb-3">
+          <input type="text" class="form-control" placeholder="Full Name" [(ngModel)]="fullName" name="fullName" required>
+          <input type="tel" class="form-control mt-3" placeholder="Contact Number" pattern="[0-9]{10}" [(ngModel)]="contactNumber" name="contactNumber" required>
+        </div>
+        
+        <!-- Common Fields -->
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Email" [(ngModel)]="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" placeholder="Password" [(ngModel)]="password" name="password" required>
+        </div>
+        
+        <!-- Submit Button -->
+        <div class="d-grid gap-2 mt-4">
+          <button class="btn btn-primary" type="submit">{{ showSignIn ? 'Login' : 'Register' }}</button>
+          
+          <!-- Toggle Mode Button -->
+          <button class="btn btn-outline-secondary" type="button" (click)="toggleAuthMode()">
+            {{ showSignIn ? 'Need an account? Register' : 'Already have an account? Login' }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
